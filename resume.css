@@ -1,0 +1,202 @@
+/* Base Styles (Reusing from previous page) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #1A1A1A;
+    --bg-secondary: #2C2C2C;
+    --text-primary: #E0E0E0;
+    --accent-color: #3AAFA9;
+    --highlight-color: #4A90E2;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Navigation (Same as Home Page) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: var(--bg-secondary);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--highlight-color);
+}
+/* Resume Page Specific Styles */
+.resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.resume-title {
+    font-size: 3rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--highlight-color);
+}
+
+.resume-image-container {
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 2rem;
+}
+
+.resume-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.resume-image:hover {
+    transform: scale(1.05);
+}
+
+/* Resume Info Section */
+
+.resume-info-items {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.resume-info-details i,
+.resume-info-details span {
+    color: var(--accent-color);
+}
+
+.resume-section-title {
+    font-size: 3rem;
+    color: var(--accent-color);
+
+}
+
+.resume-info-details p {
+    border-bottom: 2px solid var(--highlight-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Education Section */
+.education-section, 
+.experience-section, 
+.skills-section,
+.resume-info-details {
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--highlight-color);
+    padding-bottom: 0.5rem;
+}
+
+.education-item,
+.experience-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.education-item:last-child,
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.item-title {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.item-subtitle {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 1rem;
+}

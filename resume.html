@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jasie G. Brigondo - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration: none;"><div class="logo">JB</div></a>
+        <ul class="nav-links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="#" class="active">Resume</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Resume Container -->
+    <div class="resume-container">
+        <!-- Resume Header -->
+        <div class="resume-header">
+            <h1 class="resume-title">Resume</h1>
+            <a href="#" class="download-btn" id="downloadBtn">Download Resume (PDF)</a>
+        </div>
+
+        <!-- Resume Info Section -->
+        <section class="resume-info-details">
+            <h1 class="resume-section-title">Jasie Brigondo</h1>
+            <h2 class="item-title">BS in Technology Communication Management</h2>
+            <p>University of Science and Technology of Southern Philippines</p>
+            <div class="resume-info-items">
+                <div class="resume-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>jassiebrigondo3@gmail.com</span>
+                </div>
+                <div class="resume-info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+63 (953) 103-5392</span>
+                </div>
+                <div class="resume-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Purok 6, Balacanas Villanueva Misamis Oriental</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Info Section -->
+        <section class="education-section">
+            <h2 class="section-title">About Me</h2>
+            <p>I consider myself as a responsible and orderly person. <br>
+               I am looking forward for my first working experience.
+            </p>
+            
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3 class="item-title">BS Technology Communication Management</h3>
+                <p class="item-subtitle">University of Science and Technology of Southern Philippines</p>
+                <p>Expected Graduation: 2027</p>
+            </div>
+            <div class="education-item">
+                <h3 class="item-title">Senior High School</h3>
+                <p class="item-subtitle">Tambobong Balacanas Senior High School</p>
+                <p>Graduated: 2023</p>
+            </div>
+            <div class="education-item">
+                <h3 class="item-title">High School</h3>
+                <p class="item-subtitle">Tambobong High School</p>
+                <p>Graduated: 2021</p>
+            </div>
+            <div class="education-item">
+                <h3 class="item-title">Elementary</h3>
+                <p class="item-subtitle">Don Fernando Jacinto Elementary School</p>
+                <p>Graduated: 2017</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <h3 class="item-title">Laying Department Secretary</h3>
+                <p class="item-subtitle">Amley Food Corporation</p>
+                <p>
+                    Collaborate with other development teams
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3 class="item-title">Work Immersion</h3>
+                <p class="item-subtitle">BPLO</p>
+                <p>
+                    Entertaining clients and printing permots
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Time Management Skills</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Creativity</span>
+                <span class="skill-tag">Leadership</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2024  Jasie G. Brigondo. All rights reserved.
+    </footer>
+</body>
+    <script>
+        const downloadBtn = document.getElementById("downloadBtn");
+        downloadBtn.addEventListener("click", () => {
+                const link = document.createElement("a");
+                link.href = "pdf/Resume.pdf"; // Replace with the actual dark theme PDF file path
+                link.download = "Resume.pdf"; // Specify the download file name
+                link.click();
+            });
+    </script>
+</html>
